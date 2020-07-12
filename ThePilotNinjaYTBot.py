@@ -18,7 +18,7 @@ def read_token():
 #bot start and status
 @bot.event
 async def on_ready():
-    await bot.change_presence(status=discord.Status.online, activity=discord.Game("!help"))
+    await bot.change_presence(status=discord.Status.online, activity=discord.Game("/help"))
     print("Logged in as {0.user}".format(bot))
 
 #Welcome Command
